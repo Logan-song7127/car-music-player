@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Car Player</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="icon.png">
+	
+	<link rel="stylesheet" href="styles.css">
+	<link rel="manifest" href="manifest.json">
+	
+</head>
+<body>
+	<div class="player-wrapper">
+		<h1 id="ui-title">Connecting to Server...</h1>
+		<h3 id="ui-artist">Please wait</h3>
+	
+		<audio id="audio-engine" preload="auto"></audio>
+		<div class="player-controls">
+			<button id="btn-prev" class="control-btn">⏮</button>
+			<button id="btn-play" class="control-btn main-btn">▶</button>
+            		<button id="btn-next" class="control-btn">⏭</button>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
