@@ -35,7 +35,7 @@ def get_playlist():
 			playlist.append({
 				"title": title.strip(),
 				"artist": artist.strip(),
-				"url": f"http://{PC_IP}:5000/music/{filename}"
+				"url": f"https://car-music-player.onrender.com/music/{filename}"
 			})
 
 	return jsonify({"tracks": playlist})
