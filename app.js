@@ -15,7 +15,7 @@ const btnNext=document.getElementById('btn-next');
 
 async function initializeApp(){
 	try{
-		const networkResponse= await fetch(SERVER_URL);
+		const networkResponse= await fetch(https://car-music-player.onrender.com);
 		const data=await networkResponse.json();
 		playlistTracks=data.tracks;
 		
