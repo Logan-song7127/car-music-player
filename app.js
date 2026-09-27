@@ -2,8 +2,8 @@ if('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('sw.js');
 }
 
-const SERVER_URL = "http://192.168.1.73:5000/api/playlist";
-let playlistTracks=[];
+const SERVER_URL = "https://car-music-player.onrender.com/api/playlist";
+let playlistTracks = [];
 let activeTrackIndex=0;
 
 const audioEngine=document.getElementById('audio-engine');
@@ -15,7 +15,7 @@ const btnNext=document.getElementById('btn-next');
 
 async function initializeApp(){
 	try{
-		const networkResponse= await fetch(https://car-music-player.onrender.com);
+		const networkResponse = await fetch('https://car-music-player.onrender.com/api/playlist');
 		const data=await networkResponse.json();
 		playlistTracks=data.tracks;
 		
